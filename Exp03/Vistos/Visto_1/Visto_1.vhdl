@@ -38,16 +38,16 @@ end Visto_1;
 architecture Visto_1_op of Visto_1 is
 
 begin
-with S select
-	Y <=	D(0) when "000",
-			D(1) when "001",
-			D(2) when "010",
-			D(3) when "011",
-			D(4) when "100",
-			D(5) when "101",
-			D(6) when "110",
-			D(7) when "111",
-			'0' when others;
+
+	Y <=	D(0) when (S="000") else
+			D(1) when (S="001") else
+			D(2) when (S="010") else
+			D(3) when (S="011") else
+			D(4) when (S="100") else
+			D(5) when (S="101") else
+			D(6) when (S="110") else
+			D(7) when (S="111") else
+			'0' ;
 
 end Visto_1_op;
 

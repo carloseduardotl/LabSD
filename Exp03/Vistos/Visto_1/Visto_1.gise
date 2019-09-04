@@ -46,6 +46,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="Visto_1.ut" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:fileType="FILE_XPI" xil_pn:name="Visto_1.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Visto_1.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Visto_1_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="Visto_1_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Visto_1_map.map" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Visto_1_map.mrp" xil_pn:subbranch="Map"/>
@@ -77,6 +78,7 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1567619182" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1567619182">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1567619182" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-7316092672828151366" xil_pn:start_ts="1567619182">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -102,7 +104,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1567619189" xil_pn:in_ck="4512942273052385313" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="5618917072403738058" xil_pn:start_ts="1567619182">
+    <transform xil_pn:end_ts="1567622056" xil_pn:in_ck="4512942273052385313" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-4304842110916416170" xil_pn:start_ts="1567622050">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -124,7 +126,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1567619193" xil_pn:in_ck="-412306185542284740" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="4681773385079216870" xil_pn:start_ts="1567619189">
+    <transform xil_pn:end_ts="1567622061" xil_pn:in_ck="-412306185542284740" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="4681773385079216870" xil_pn:start_ts="1567622057">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Visto_1.bld"/>
@@ -133,9 +135,11 @@
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1567619197" xil_pn:in_ck="-361764079028557923" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1303429204059397298" xil_pn:start_ts="1567619193">
+    <transform xil_pn:end_ts="1567622065" xil_pn:in_ck="-361764079028557923" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1303429204059397298" xil_pn:start_ts="1567622061">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Visto_1.pcf"/>
       <outfile xil_pn:name="Visto_1_map.map"/>
       <outfile xil_pn:name="Visto_1_map.mrp"/>
@@ -146,7 +150,7 @@
       <outfile xil_pn:name="Visto_1_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1567619204" xil_pn:in_ck="1903832331637061654" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="1934304854298957634" xil_pn:start_ts="1567619197">
+    <transform xil_pn:end_ts="1567622071" xil_pn:in_ck="1903832331637061654" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="1934304854298957634" xil_pn:start_ts="1567622065">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Visto_1.ncd"/>
@@ -160,7 +164,7 @@
       <outfile xil_pn:name="Visto_1_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1567619212" xil_pn:in_ck="136755826456124008" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="287829442711806529" xil_pn:start_ts="1567619205">
+    <transform xil_pn:end_ts="1567622079" xil_pn:in_ck="136755826456124008" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1567622072">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Visto_1.bgn"/>
@@ -172,7 +176,7 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1567619204" xil_pn:in_ck="-7033322138840497767" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1567619202">
+    <transform xil_pn:end_ts="1567622071" xil_pn:in_ck="-7033322138840497767" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1567622069">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Visto_1.twr"/>

@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2019-09-04T15:26:32</DateModified>
+  <DateModified>2019-09-04T15:30:41</DateModified>
   <ModuleName>Visto_2</ModuleName>
   <SummaryTimeStamp>2019-09-04T15:26:15</SummaryTimeStamp>
   <SavedFilePath>/home/cadu/Documentos/LabSD/Exp03/Vistos/Visto_2/iseconfig/Visto_2.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/cadu/Documentos/LabSD/Exp03/Vistos/Visto_2</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>/home/cadu/Documentos/LabSD/Exp03/Vistos/Visto_2/</ImplementationReportsDirectory>
   <DateInitialized>2019-09-04T14:51:38</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

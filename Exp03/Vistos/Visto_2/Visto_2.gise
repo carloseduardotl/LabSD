@@ -72,6 +72,7 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1567620456" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1567620456">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1567620456" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="7791581421083118204" xil_pn:start_ts="1567620456">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -100,6 +101,7 @@
     <transform xil_pn:end_ts="1567621062" xil_pn:in_ck="4512942273091520706" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-4700975288657859252" xil_pn:start_ts="1567621056">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name=".lso"/>
@@ -122,6 +124,7 @@
     <transform xil_pn:end_ts="1567621652" xil_pn:in_ck="7928471473293881619" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="1448820334654325992" xil_pn:start_ts="1567621648">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Visto_2.bld"/>
       <outfile xil_pn:name="Visto_2.ngd"/>
       <outfile xil_pn:name="Visto_2_ngdbuild.xrpt"/>
@@ -132,6 +135,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="Visto_2.pcf"/>
@@ -177,6 +181,7 @@
     <transform xil_pn:end_ts="1567621652" xil_pn:in_ck="-5442236984462916588" xil_pn:name="TRAN_createTimingConstraints" xil_pn:start_ts="1567621652">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
   </transforms>
 
