@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date:    14:51:38 09/04/2019 
+-- Create Date:    21:43:58 09/04/2019 
 -- Design Name: 
--- Module Name:    Visto_2 - Visto_2_op 
+-- Module Name:    Visto_2 - Behavioral 
 -- Project Name: 
 -- Target Devices: 
 -- Tool versions: 
@@ -56,4 +56,3 @@ with A select
 			"0000000000000000" when others;
 
 end Visto_2_op;
-

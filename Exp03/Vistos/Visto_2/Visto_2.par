@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Inspiron-5448::  Wed Sep 04 15:26:51 2019
+Inspiron-5448::  Wed Sep 04 21:46:29 2019
 
 par -w -intstyle ise -ol high -t 1 Visto_2_map.ncd Visto_2.ncd Visto_2.pcf 
 

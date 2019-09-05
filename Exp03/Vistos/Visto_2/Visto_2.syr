@@ -108,18 +108,19 @@ Slice Utilization Ratio Delta      : 5
 *                          HDL Compilation                              *
 =========================================================================
 Compiling vhdl file "/home/cadu/Documentos/LabSD/Exp03/Vistos/Visto_2/Visto_2.vhdl" in Library work.
-Architecture visto_2_op of Entity visto_2 is up to date.
+Entity <Visto_2> compiled.
+Entity <Visto_2> (Architecture <Visto_2_op>) compiled.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
-Analyzing hierarchy for entity <Visto_2> in library <work> (architecture <visto_2_op>).
+Analyzing hierarchy for entity <Visto_2> in library <work> (architecture <Visto_2_op>).
 
 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
-Analyzing Entity <Visto_2> in library <work> (Architecture <visto_2_op>).
+Analyzing Entity <Visto_2> in library <work> (Architecture <Visto_2_op>).
 Entity <Visto_2> analyzed. Unit <Visto_2> generated.
 
 
@@ -279,13 +280,13 @@ Delay:               6.823ns (Levels of Logic = 3)
 =========================================================================
 
 
-Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 3.40 secs
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.33 secs
  
 --> 
 
 
-Total memory usage is 496356 kilobytes
+Total memory usage is 496232 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)
