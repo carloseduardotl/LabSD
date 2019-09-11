@@ -76,6 +76,7 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1567644372" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1567644372">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1567644372" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="7791581421083118204" xil_pn:start_ts="1567644372">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -104,6 +105,7 @@
     <transform xil_pn:end_ts="1567644378" xil_pn:in_ck="4512942273091520706" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-4700975288657859252" xil_pn:start_ts="1567644372">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Visto_2.lso"/>
@@ -175,6 +177,7 @@
     <transform xil_pn:end_ts="1567644400" xil_pn:in_ck="136755826457309929" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="287829442711806529" xil_pn:start_ts="1567644395">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Visto_2.bgn"/>
       <outfile xil_pn:name="Visto_2.bit"/>
