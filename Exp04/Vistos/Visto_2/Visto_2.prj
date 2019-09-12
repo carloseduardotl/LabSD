@@ -1,0 +1,3 @@
+vhdl work "Mux_8.vhdl"
+vhdl work "Decoder.vhdl"
+vhdl work "Visto_2.vhdl"

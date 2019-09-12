@@ -1,0 +1,6 @@
+AR decoder decoder_op /home/cadu/Documentos/LabSD/Exp04/Vistos/Visto_2/Decoder.vhdl sub00/vhpl03 1568252572
+EN mux_8 NULL /home/cadu/Documentos/LabSD/Exp04/Vistos/Visto_2/Mux_8.vhdl sub00/vhpl04 1568252573
+AR visto_2 visto_2_op /home/cadu/Documentos/LabSD/Exp04/Vistos/Visto_2/Visto_2.vhdl sub00/vhpl01 1568252576
+AR mux_8 mux_8_op /home/cadu/Documentos/LabSD/Exp04/Vistos/Visto_2/Mux_8.vhdl sub00/vhpl05 1568252574
+EN decoder NULL /home/cadu/Documentos/LabSD/Exp04/Vistos/Visto_2/Decoder.vhdl sub00/vhpl02 1568252571
+EN visto_2 NULL /home/cadu/Documentos/LabSD/Exp04/Vistos/Visto_2/Visto_2.vhdl sub00/vhpl00 1568252575
