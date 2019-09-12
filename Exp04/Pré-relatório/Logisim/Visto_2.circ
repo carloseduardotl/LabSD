@@ -244,6 +244,7 @@ end TCL_Generic;
     <comp lib="0" loc="(260,330)" name="Pin">
       <a name="facing" val="north"/>
       <a name="output" val="true"/>
+      <a name="label" val="S"/>
     </comp>
     <comp lib="1" loc="(220,150)" name="OR Gate">
       <a name="facing" val="south"/>
