@@ -1,0 +1,5 @@
+set -tmpdir "/home/cadu/Documentos/LabSD/Exp04/Vistos/Visto_1/xst/projnav.tmp"
+set -xsthdpdir "/home/cadu/Documentos/LabSD/Exp04/Vistos/Visto_1/xst"
+elaborate
+-ifn MUX.prj
+-ifmt mixed
