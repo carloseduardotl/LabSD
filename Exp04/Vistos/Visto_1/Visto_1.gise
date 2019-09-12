@@ -79,6 +79,7 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1568250638" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1568250638">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1568250638" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-7316092672828151366" xil_pn:start_ts="1568250638">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -107,6 +108,7 @@
     <transform xil_pn:end_ts="1568250644" xil_pn:in_ck="-6202385004763058217" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="5618917072403738058" xil_pn:start_ts="1568250638">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name=".lso"/>
@@ -129,6 +131,7 @@
     <transform xil_pn:end_ts="1568250648" xil_pn:in_ck="-412306185542284740" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="4681773385079216870" xil_pn:start_ts="1568250644">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Visto_1.bld"/>
       <outfile xil_pn:name="Visto_1.ngd"/>
       <outfile xil_pn:name="Visto_1_ngdbuild.xrpt"/>
@@ -138,6 +141,7 @@
     <transform xil_pn:end_ts="1568250652" xil_pn:in_ck="-361764079028557923" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1303429204059397298" xil_pn:start_ts="1568250648">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Visto_1.pcf"/>
       <outfile xil_pn:name="Visto_1_map.map"/>
       <outfile xil_pn:name="Visto_1_map.mrp"/>
@@ -151,6 +155,7 @@
     <transform xil_pn:end_ts="1568250658" xil_pn:in_ck="1903832331637061654" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="1934304854298957634" xil_pn:start_ts="1568250652">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Visto_1.ncd"/>
       <outfile xil_pn:name="Visto_1.pad"/>
       <outfile xil_pn:name="Visto_1.par"/>
@@ -165,6 +170,8 @@
     <transform xil_pn:end_ts="1568250664" xil_pn:in_ck="136755826456124008" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="287829442711806529" xil_pn:start_ts="1568250658">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Visto_1.bgn"/>
       <outfile xil_pn:name="Visto_1.bit"/>
       <outfile xil_pn:name="Visto_1.drc"/>
@@ -177,6 +184,7 @@
     <transform xil_pn:end_ts="1568250658" xil_pn:in_ck="-7033322138840497767" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1568250657">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Visto_1.twr"/>
       <outfile xil_pn:name="Visto_1.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
