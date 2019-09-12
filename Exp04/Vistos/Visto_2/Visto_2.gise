@@ -136,6 +136,8 @@
     <transform xil_pn:end_ts="1568252581" xil_pn:in_ck="5112239304059971071" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1303429204059397298" xil_pn:start_ts="1568252577">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Visto_2.pcf"/>
       <outfile xil_pn:name="Visto_2_map.map"/>
       <outfile xil_pn:name="Visto_2_map.mrp"/>
