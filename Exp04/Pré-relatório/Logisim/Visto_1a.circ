@@ -143,15 +143,15 @@ end TCL_Generic;
     <wire from="(170,60)" to="(200,60)"/>
     <wire from="(170,90)" to="(200,90)"/>
     <wire from="(110,80)" to="(200,80)"/>
-    <wire from="(220,100)" to="(220,140)"/>
-    <wire from="(110,70)" to="(110,80)"/>
-    <wire from="(150,70)" to="(200,70)"/>
-    <wire from="(110,70)" to="(130,70)"/>
-    <wire from="(90,80)" to="(110,80)"/>
     <wire from="(200,160)" to="(200,180)"/>
     <wire from="(130,150)" to="(200,150)"/>
     <wire from="(130,180)" to="(200,180)"/>
+    <wire from="(220,100)" to="(220,140)"/>
+    <wire from="(110,70)" to="(110,80)"/>
     <wire from="(240,80)" to="(280,80)"/>
+    <wire from="(150,70)" to="(200,70)"/>
+    <wire from="(110,70)" to="(130,70)"/>
+    <wire from="(90,80)" to="(110,80)"/>
     <comp lib="0" loc="(170,90)" name="Constant">
       <a name="facing" val="north"/>
     </comp>
@@ -172,6 +172,7 @@ end TCL_Generic;
     <comp lib="0" loc="(280,80)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
+      <a name="label" val="X"/>
     </comp>
     <comp lib="1" loc="(150,70)" name="NOT Gate">
       <a name="size" val="20"/>
