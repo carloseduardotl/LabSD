@@ -29,13 +29,13 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity Visto_2 is
+entity MUX is
     Port ( S : in  STD_LOGIC_VECTOR (1 downto 0);
            D : in  STD_LOGIC_VECTOR (3 downto 0);
            Y : out  STD_LOGIC);
-end Visto_2;
+end MUX;
 
-architecture Visto_2_op of Visto_2 is
+architecture MUX_op of MUX is
 
 begin
 my_proc: process (S, D)
@@ -48,4 +48,4 @@ my_proc: process (S, D)
 		end if;
 end process my_proc;
 
-end Visto_2_op;
+end MUX_op;

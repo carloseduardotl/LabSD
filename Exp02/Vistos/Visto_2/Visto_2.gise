@@ -107,6 +107,7 @@
     <transform xil_pn:end_ts="1567017056" xil_pn:in_ck="4512942273091520706" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="3822009601731538136" xil_pn:start_ts="1567017050">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name=".lso"/>
