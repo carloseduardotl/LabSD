@@ -3,7 +3,8 @@ Release 14.7 Trace  (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 4 -n
-3 -fastpaths -xml Visto_2.twx Visto_2.ncd -o Visto_2.twr Visto_2.pcf
+3 -fastpaths -xml Visto_2.twx Visto_2.ncd -o Visto_2.twr Visto_2.pcf -ucf
+Visto_2.ucf
 
 Design file:              Visto_2.ncd
 Physical constraint file: Visto_2.pcf
@@ -43,24 +44,24 @@ Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-A              |S              |    8.779|
-B              |S              |    8.858|
-C              |S              |    9.008|
-D              |S              |    8.973|
-E              |S              |    8.202|
-F              |S              |    8.192|
-G              |S              |    6.347|
+A              |S              |   10.547|
+B              |S              |   10.972|
+C              |S              |   10.314|
+D              |S              |   11.039|
+E              |S              |    9.810|
+F              |S              |    9.931|
+G              |S              |    8.023|
 ---------------+---------------+---------+
 
 
-Analysis completed Wed Sep 11 22:43:07 2019 
+Analysis completed Sun Sep 22 17:32:45 2019 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 320 MB
+Peak Memory Usage: 321 MB
 
 
 

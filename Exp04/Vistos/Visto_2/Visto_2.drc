@@ -1,7 +1,7 @@
 Release 14.7 Drc P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Wed Sep 11 22:43:10 2019
+Sun Sep 22 17:32:48 2019
 
 drc -z Visto_2.ncd Visto_2.pcf
 

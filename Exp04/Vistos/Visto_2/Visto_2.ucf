@@ -1,6 +1,7 @@
-NET "A" LOC = "F3";
-NET "B" LOC = "G3";
-NET "C" LOC = "B4";
+NET "A" LOC = "E2";
+NET "B" LOC = "F3";
+NET "C" LOC = "G3";
+NET "D" LOC = "B4";
 NET "E" LOC = "K3";
 NET "F" LOC = "L3";
 NET "G" LOC = "P11";

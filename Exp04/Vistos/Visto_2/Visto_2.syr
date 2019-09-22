@@ -4,15 +4,15 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Reading design: Visto_2.prj
@@ -71,7 +71,7 @@ Automatic Register Balancing       : No
 
 ---- Target Options
 Add IO Buffers                     : YES
-Global Maximum Fanout              : 500
+Global Maximum Fanout              : 100000
 Add Generic Clock Buffer(BUFG)     : 24
 Register Duplication               : YES
 Slice Packing                      : YES
@@ -112,7 +112,8 @@ Architecture decoder_op of Entity decoder is up to date.
 Compiling vhdl file "/home/cadu/Documentos/LabSD/Exp04/Vistos/Visto_2/Mux_8.vhdl" in Library work.
 Architecture mux_8_op of Entity mux_8 is up to date.
 Compiling vhdl file "/home/cadu/Documentos/LabSD/Exp04/Vistos/Visto_2/Visto_2.vhdl" in Library work.
-Architecture visto_2_op of Entity visto_2 is up to date.
+Entity <visto_2> compiled.
+Entity <visto_2> (Architecture <visto_2_op>) compiled.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -163,8 +164,7 @@ Synthesizing Unit <Visto_2>.
     Related source file is "/home/cadu/Documentos/LabSD/Exp04/Vistos/Visto_2/Visto_2.vhdl".
 WARNING:Xst:1780 - Signal <MUX_out> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <Decoder_out<12:10>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <Decoder_out<8:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <Decoder_out<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Decoder_out<8:1>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 Unit <Visto_2> synthesized.
 
 
@@ -311,7 +311,7 @@ Delay:               9.099ns (Levels of Logic = 6)
      LUT4:I0->O            1   0.704   0.595  MUX_in_1_or00001 (MUX_in<1>)
      LUT2:I0->O            1   0.704   0.000  M/Mmux_Y_7 (M/Mmux_Y_7)
      MUXF5:I0->O           1   0.321   0.455  M/Mmux_Y_5_f5 (M/Mmux_Y_5_f5)
-     LUT4:I2->O            1   0.704   0.420  G62 (S_OBUF)
+     LUT4:I2->O            1   0.704   0.420  G71 (S_OBUF)
      OBUF:I->O                 3.272          S_OBUF (S)
     ----------------------------------------
     Total                      9.099ns (6.923ns logic, 2.176ns route)
@@ -320,15 +320,15 @@ Delay:               9.099ns (Levels of Logic = 6)
 =========================================================================
 
 
-Total REAL time to Xst completion: 3.00 secs
-Total CPU time to Xst completion: 3.41 secs
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.47 secs
  
 --> 
 
 
-Total memory usage is 497012 kilobytes
+Total memory usage is 497064 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    4 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

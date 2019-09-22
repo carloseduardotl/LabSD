@@ -77,7 +77,7 @@ begin
 	MUX_in(1) <= Decoder_out(9) or Decoder_out(15);
 	MUX_in(2) <= Decoder_out(14);
 	MUX_in(3) <= Decoder_out(13);
-	MUX_in(4) <= Decoder_out(1) or Decoder_out(15);
+	MUX_in(4) <= Decoder_out(0) or Decoder_out(15);
 	MUX_in(5) <= '0';
 	MUX_in(6) <= '1';
 	MUX_in(7) <= '1';
