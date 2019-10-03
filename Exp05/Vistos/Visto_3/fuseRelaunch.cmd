@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/cadu/Documentos/LabSD/Exp05/Vistos/Visto_3/test_isim_beh.exe" -prj "/home/cadu/Documentos/LabSD/Exp05/Vistos/Visto_3/test_beh.prj" "work.test" 
