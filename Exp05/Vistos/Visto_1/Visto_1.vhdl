@@ -45,7 +45,7 @@ component Sum is
 				Cout : out  STD_LOGIC);
 end component;
 
-signal carry : STD_LOGIC_VECTOR (4 downto 0);
+signal carry : STD_LOGIC_VECTOR (3 downto 0);
 
 begin
 
@@ -53,7 +53,7 @@ begin
 	S1: Sum port map(A(1),B(1),carry(0),S(1),carry(1));
 	S2: Sum port map(A(2),B(2),carry(1),S(2),carry(2));
 	S3: Sum port map(A(3),B(3),carry(2),S(3),carry(3));
-	S4: Sum port map('0','0',carry(3),S(4),carry(4));
+	S(4) <= carry(3);
 
 
 end Visto_1_op;
