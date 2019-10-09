@@ -76,13 +76,16 @@ ARCHITECTURE behavior OF test IS
    signal B : std_logic_vector(3 downto 0);
    -- No clocks detected in port list. Replace <clock> below with 
    -- appropriate port name 
- 
+	signal A_uns, B_uns : UNSIGNED (3 downto 0);
    
  
 BEGIN
  
+	A_uns <= UNSIGNED(A);
+	B_uns <= UNSIGNED(B);
+ 
 	U0: Visto_1 port map(A, B, F_dut);
-	U1: Visto_2 port map(A, B, F_gm);
+	U1: Visto_2 port map(A_uns, B_uns, F_gm);
 	U2: testbench port map(F_dut, F_gm, A, B);   
 
 END;
