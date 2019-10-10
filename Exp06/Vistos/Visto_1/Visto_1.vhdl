@@ -38,7 +38,7 @@ entity Visto_1 is
            Q : out  STD_LOGIC);
 end Visto_1;
 
-architecture FP of Visto_1 is
+architecture F_F of Visto_1 is
 
 signal JK : STD_LOGIC_VECTOR (1 downto 0);
 signal Qbuf : STD_LOGIC;
@@ -63,5 +63,5 @@ begin
 		end if;
 	end process;
 
-end FP;
+end F_F;
 

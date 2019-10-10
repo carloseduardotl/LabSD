@@ -1,0 +1,8 @@
+NET "PR" LOC = "N3";
+NET "CLR" LOC = "E2";
+NET "CLK" LOC = "F3";
+
+NET "J" LOC = "L3";
+NET "K" LOC = "P11";
+
+NET "Q" LOC = "M5";
