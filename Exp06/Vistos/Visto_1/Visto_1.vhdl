@@ -19,6 +19,7 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -45,20 +46,20 @@ signal Qbuf : STD_LOGIC;
 
 begin
 
-	JK <= (J & K);
+	JK <= J & K;
 	Q <= Qbuf;
 	
 	process (PR, CLR, CLK)
 	begin
-		if PR = '1' then Q <= '1';
-		elsif CLR = '1' then Q <= '0';
+		if PR = '1' then Qbuf <= '1';
+		elsif CLR = '1' then Qbuf <= '0';
 		elsif rising_edge(CLK) then
 			case JK is
 				when "00" => Qbuf <= Qbuf;
 				when "01" => Qbuf <= '0';
 				when "10" => Qbuf <= '1';
 				when "11" => Qbuf <= not(Qbuf);
-				when others => Qbuf <= Qbuf;
+				when others => null;
 			end case;
 		end if;
 	end process;
