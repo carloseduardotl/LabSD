@@ -1,0 +1,10 @@
+
+NET "A(0)" LOC = "P11";
+NET "A(1)" LOC = "L3";
+
+NET "CLK" LOC = "G12";
+NET "RESET" LOC = "A7";
+
+NET "R" LOC = "P7";
+NET "OUT_25" LOC = "M11";
+NET "OUT_50" LOC = "M5";  
