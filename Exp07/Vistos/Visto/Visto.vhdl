@@ -33,7 +33,8 @@ entity Visto is
     Port ( A : in  STD_LOGIC_VECTOR (1 downto 0);
            CLK : in  STD_LOGIC;
 			  RESET : in STD_LOGIC;
-           R, OUT_25, OUT_50 : out  STD_LOGIC);
+           R, OUT_25, OUT_50 : out  STD_LOGIC;
+			  A_S : out STD_LOGIC_VECTOR (4 downto 0));
 end Visto;
 
 architecture Visto_op of Visto is
@@ -58,9 +59,10 @@ begin
 		case estadoAtual is
 		
 			when INIT =>
-				R <= '1';
+				R <= '0';
 				OUT_25 <= '0';
 				OUT_50 <= '0';
+				A_S <= "00000";
 				case A is
 					when "00" => proxEstado <= INIT;
 					when "01" => proxEstado <= c25;
@@ -70,9 +72,10 @@ begin
 				end case;
 				
 			when c25 =>
-				R <= '1';
+				R <= '0';
 				OUT_25 <= '0';
 				OUT_50 <= '0';
+				A_S <= "00001";
 				case A is
 					when "00" => proxEstado <= c25;
 					when "01" => proxEstado <= c50;
@@ -82,9 +85,10 @@ begin
 				end case;
 			
 			when c50 =>
-				R <= '1';
+				R <= '0';
 				OUT_25 <= '0';
 				OUT_50 <= '0';
+				A_S <= "00010";
 				case A is
 					when "00" => proxEstado <= c50;
 					when "01" => proxEstado <= c75;
@@ -94,9 +98,10 @@ begin
 				end case;
 			
 			when c75 =>
-				R <= '1';
+				R <= '0';
 				OUT_25 <= '0';
 				OUT_50 <= '0';
+				A_S <= "00100";
 				case A is
 					when "00" => proxEstado <= c75;
 					when "01" => proxEstado <= c100;
@@ -109,6 +114,7 @@ begin
 				R <= '1';
 				OUT_25 <= '0';
 				OUT_50 <= '0';
+				A_S <= "01000";
 				case A is
 					when "00" => proxEstado <= INIT;
 					when "01" => proxEstado <= c25;
@@ -121,6 +127,7 @@ begin
 				R <= '1';
 				OUT_25 <= '1';
 				OUT_50 <= '0';
+				A_S <= "10000";
 				case A is
 					when "00" => proxEstado <= INIT;
 					when "01" => proxEstado <= c25;
@@ -133,6 +140,7 @@ begin
 				R <= '0';
 				OUT_25 <= '1';
 				OUT_50 <= '0';
+				A_S <= "00000";
 				case A is
 					when "00" => proxEstado <= INIT;
 					when "01" => proxEstado <= c25;
@@ -145,6 +153,7 @@ begin
 				R <= '0';
 				OUT_25 <= '0';
 				OUT_50 <= '1';
+				A_S <= "00000";
 				case A is
 					when "00" => proxEstado <= INIT;
 					when "01" => proxEstado <= c25;
@@ -157,6 +166,7 @@ begin
 				R <= '0';
 				OUT_25 <= '1';
 				OUT_50 <= '1';
+				A_S <= "00000";
 				case A is
 					when "00" => proxEstado <= INIT;
 					when "01" => proxEstado <= c25;
