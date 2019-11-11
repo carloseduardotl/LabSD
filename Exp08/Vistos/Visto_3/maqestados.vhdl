@@ -23,7 +23,7 @@ architecture maqestados_arch of maqestados is
 							liberado_LO,
 							amarelo_NS,
 							amarelo_LO,
-							vermelho_NS
+							vermelho_NS,
 							vermelho_LO);
 							
 	signal currentState, nextState : estado;
@@ -51,15 +51,66 @@ begin
 			when intermitente_of =>
 				RYGsemaforoA <= "000";
 				RYGsemaforoB <= "000";
-				nextState <= iintermitente_on;
+				nextState <= intermitente_on;
 				resetcounter <= '1';
 				
 			when liberado_NS =>
 				RYGsemaforoA <= "001";
 				RYGsemaforoB <= "100";
 				if(ligadesliga = '1') then nextState <= intermitente_on; resetcounter <= '1';
-				elsif(
-
+				elsif(sensorA = '1') then nextState <= currentState;
+				elsif((T20 = '1') and (sensorB = '1')) then nextState <= amarelo_NS; resetcounter <= '1';
+				elsif(T60 = '1') then nextState <= amarelo_NS; resetcounter <= '1';
+				else nextState <= currentState;
+				end if;
+				
+			when amarelo_NS =>
+				RYGsemaforoA <= "010";
+				RYGsemaforoB <= "100";
+				if(ligadesliga = '1') then nextState <= intermitente_on; resetcounter <= '1';
+				elsif(T6 = '1') then nextState <= vermelho_NS; resetcounter <= '1';
+				else nextState <= currentState;
+				end if;
+				
+			when vermelho_NS =>
+				RYGsemaforoA <= "100";
+				RYGsemaforoB <= "100";
+				if(ligadesliga = '1') then nextState <= intermitente_on; resetcounter <= '1';
+				elsif(T5 = '1') then nextState <= liberado_LO; resetcounter <= '1';
+				else nextState <= currentState;
+				end if;
+				
+			when liberado_LO =>
+				RYGsemaforoA <= "100";
+				RYGsemaforoB <= "001";
+				if(ligadesliga = '1') then nextState <= intermitente_on; resetcounter <= '1';
+				elsif(sensorB = '1') then nextState <= currentState;
+				elsif((T20 = '1') and (sensorA = '1')) then nextState <= amarelo_LO; resetcounter <= '1';
+				elsif(T60 = '1') then nextState <= amarelo_LO; resetcounter <= '1';
+				else nextState <= currentState;
+				end if;
+				
+			when amarelo_LO =>
+				RYGsemaforoA <= "100";
+				RYGsemaforoB <= "010";
+				if(ligadesliga = '1') then nextState <= intermitente_on; resetcounter <= '1';
+				elsif(T6 = '1') then nextState <= vermelho_LO; resetcounter <= '1';
+				else nextState <= currentState;
+				end if;
+				
+			when vermelho_LO =>
+				RYGsemaforoA <= "100";
+				RYGsemaforoB <= "100";
+				if(ligadesliga = '1') then nextState <= intermitente_on; resetcounter <= '1';
+				elsif(T5 = '1') then nextState <= liberado_NS; resetcounter <= '1';
+				else nextState <= currentState;
+				end if;
+				
+			when others =>
+				nextState <= intermitente_on;
+				
+			end case;
+		end process comb_proc;
 
 end maqestados_arch;
 
