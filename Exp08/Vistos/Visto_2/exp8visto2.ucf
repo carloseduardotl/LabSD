@@ -1,5 +1,5 @@
 NET "clock" LOC = "B8"; 
-NET "clock" CLOCK_DEDICATED_ROUTE = FALSE;
+#NET "clock" CLOCK_DEDICATED_ROUTE = FALSE;
 
 NET "reset" LOC = "A7";
 
@@ -9,13 +9,13 @@ NET "T6" LOC = "N4";
 NET "T5" LOC = "N5";
 
 NET "num7seg<0>" LOC = "N13"; 
-NET "num7seg<1>" LOC = "L14"; 
-NET "num7seg<2>" LOC = "H12"; 
-NET "num7seg<3>" LOC = "N14"; 
+NET "num7seg<1>" LOC = "M12"; 
+NET "num7seg<2>" LOC = "L13"; 
+NET "num7seg<3>" LOC = "P12"; 
 NET "num7seg<4>" LOC = "N11"; 
-NET "num7seg<5>" LOC = "P12"; 
-NET "num7seg<6>" LOC = "L13"; 
-NET "num7seg<7>" LOC = "M12"; 
+NET "num7seg<5>" LOC = "N14"; 
+NET "num7seg<6>" LOC = "H12"; 
+NET "num7seg<7>" LOC = "L14"; 
 
 NET "displays<3>" LOC = "K14"; 
 NET "displays<2>" LOC = "M13"; 

@@ -44,8 +44,8 @@ begin
 			when intermitente_on =>
 				RYGsemaforoA <= "010";
 				RYGsemaforoB <= "010";
-				if(ligadesliga = '0') then nextState <= liberado_NS; resetcounter <= '1';
-				else nextState <= intermitente_of; resetcounter <= '0';
+				if(ligadesliga = '1') then nextState <= liberado_NS; resetcounter <= '1';
+				else nextState <= intermitente_of; resetcounter <= '1';
 				end if;
 			
 			when intermitente_of =>
@@ -57,9 +57,9 @@ begin
 			when liberado_NS =>
 				RYGsemaforoA <= "001";
 				RYGsemaforoB <= "100";
-				if(ligadesliga = '1') then nextState <= intermitente_on; resetcounter <= '1';
+				if(ligadesliga = '0') then nextState <= intermitente_on; resetcounter <= '1';
 				elsif(sensorA = '1') then nextState <= currentState;
-				elsif((T20 = '1') and (sensorB = '1')) then nextState <= amarelo_NS; resetcounter <= '1';
+				elsif((T20 = '1') and (sensorB = '1') and (sensorA = '0')) then nextState <= amarelo_NS; resetcounter <= '1';
 				elsif(T60 = '1') then nextState <= amarelo_NS; resetcounter <= '1';
 				else nextState <= currentState;
 				end if;
@@ -67,7 +67,7 @@ begin
 			when amarelo_NS =>
 				RYGsemaforoA <= "010";
 				RYGsemaforoB <= "100";
-				if(ligadesliga = '1') then nextState <= intermitente_on; resetcounter <= '1';
+				if(ligadesliga = '0') then nextState <= intermitente_on; resetcounter <= '1';
 				elsif(T6 = '1') then nextState <= vermelho_NS; resetcounter <= '1';
 				else nextState <= currentState;
 				end if;
@@ -75,7 +75,7 @@ begin
 			when vermelho_NS =>
 				RYGsemaforoA <= "100";
 				RYGsemaforoB <= "100";
-				if(ligadesliga = '1') then nextState <= intermitente_on; resetcounter <= '1';
+				if(ligadesliga = '0') then nextState <= intermitente_on; resetcounter <= '1';
 				elsif(T5 = '1') then nextState <= liberado_LO; resetcounter <= '1';
 				else nextState <= currentState;
 				end if;
@@ -83,9 +83,9 @@ begin
 			when liberado_LO =>
 				RYGsemaforoA <= "100";
 				RYGsemaforoB <= "001";
-				if(ligadesliga = '1') then nextState <= intermitente_on; resetcounter <= '1';
+				if(ligadesliga = '0') then nextState <= intermitente_on; resetcounter <= '1';
 				elsif(sensorB = '1') then nextState <= currentState;
-				elsif((T20 = '1') and (sensorA = '1')) then nextState <= amarelo_LO; resetcounter <= '1';
+				elsif((T20 = '1') and (sensorA = '1') and (sensorB = '0')) then nextState <= amarelo_LO; resetcounter <= '1';
 				elsif(T60 = '1') then nextState <= amarelo_LO; resetcounter <= '1';
 				else nextState <= currentState;
 				end if;
@@ -93,7 +93,7 @@ begin
 			when amarelo_LO =>
 				RYGsemaforoA <= "100";
 				RYGsemaforoB <= "010";
-				if(ligadesliga = '1') then nextState <= intermitente_on; resetcounter <= '1';
+				if(ligadesliga = '0') then nextState <= intermitente_on; resetcounter <= '1';
 				elsif(T6 = '1') then nextState <= vermelho_LO; resetcounter <= '1';
 				else nextState <= currentState;
 				end if;
@@ -101,7 +101,7 @@ begin
 			when vermelho_LO =>
 				RYGsemaforoA <= "100";
 				RYGsemaforoB <= "100";
-				if(ligadesliga = '1') then nextState <= intermitente_on; resetcounter <= '1';
+				if(ligadesliga = '0') then nextState <= intermitente_on; resetcounter <= '1';
 				elsif(T5 = '1') then nextState <= liberado_NS; resetcounter <= '1';
 				else nextState <= currentState;
 				end if;

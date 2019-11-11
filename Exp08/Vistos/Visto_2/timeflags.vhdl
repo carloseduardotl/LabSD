@@ -20,10 +20,10 @@ begin
 	T20 <= '1' when(dezena >= "0010") else
 			 '0';
 			 
-	T6  <= '1' when(unidade >= "0110") else
+	T6  <= '1' when((unidade >= "0110") or (dezena >= "0001")) else
 			 '0';
 			 
-	T5  <= '1' when(unidade >= "0101") else
+	T5  <= '1' when((unidade >= "0101") or(dezena >= "0001")) else
 			 '0';
 
 end timeflags_arch;

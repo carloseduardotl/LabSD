@@ -1,5 +1,5 @@
 NET "clock" LOC = "B8"; 
-NET "clock" CLOCK_DEDICATED_ROUTE = FALSE;
+#NET "clock" CLOCK_DEDICATED_ROUTE = FALSE;
 
 NET "reset" LOC = "A7";
 NET "enable" LOC = "M4";

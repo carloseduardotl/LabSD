@@ -11,9 +11,9 @@ architecture convsemaforo7seg_arch of convsemaforo7seg is
 begin
 
 	with RYGsemaforo select
-		num7seg <=	"01111111" when "001",
+		num7seg <=	"01111111" when "100",
 						"11111101" when "010",
-						"11101111" when "100",
+						"11101111" when "001",
 						"11111111" when others;
 
 end convsemaforo7seg_arch;
