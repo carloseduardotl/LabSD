@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=/home/cadu/Documentos/LabSD/Exp02/Visto_2/Visto_2.ncd
-OUTFILE=/home/cadu/Documentos/LabSD/Exp02/Visto_2/Visto_2.bit
-FAMILY=Spartan3E
-PART=xc3s100e-4cp132
-WORKINGDIR=/home/cadu/Documentos/LabSD/Exp02/Visto_2
-LICENSE=WebPack
-USER_INFO=211719663_0_0_403

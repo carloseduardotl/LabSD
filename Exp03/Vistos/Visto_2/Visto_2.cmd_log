@@ -1,6 +1,0 @@
-xst -intstyle ise -ifn "/home/cadu/Documentos/LabSD/Exp03/Vistos/Visto_2/Visto_2.xst" -ofn "/home/cadu/Documentos/LabSD/Exp03/Vistos/Visto_2/Visto_2.syr" 
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Visto_2a.ucf -p xc3s100e-cp132-4 Visto_2.ngc Visto_2.ngd  
-map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Visto_2_map.ncd Visto_2.ngd Visto_2.pcf 
-par -w -intstyle ise -ol high -t 1 Visto_2_map.ncd Visto_2.ncd Visto_2.pcf 
-trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Visto_2.twx Visto_2.ncd -o Visto_2.twr Visto_2.pcf -ucf Visto_2a.ucf 
-bitgen -intstyle ise -f Visto_2.ut Visto_2.ncd 
